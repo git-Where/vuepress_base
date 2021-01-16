@@ -18,12 +18,12 @@ after_success:
   - git commit -m ":apple:TravisCI 自动部署"
   - git push --force --quiet "https://${githubblog}@${GH_REF}" master:master
   - chmod 600 ~/.ssh/id_rsa
-  # - ssh root@114.115.182.108 -o StrictHostKeyChecking=no 'cd /usr/local/nginx/html/ && rm -rf sh && git clone https://github.com/2662419405/2662419405.github.io.git && mv 2662419405.github.io sh'
+  # - ssh root@114.115.182.108 -o StrictHostKeyChecking=no 'cd /usr/local/nginx/html/ && rm -rf sh && git clone https://github.com/git-Where/git-Where.github.io.git && mv git-Where.github.io sh'
 env:
   global:
-    - GH_REF: github.com/2662419405/vuepress.git
+    - GH_REF: github.com/git-Where/vuepress_base.git
 notifications:
   email:
-    - 2662419405@qq.com
+    - 811373724@qq.com
   on_success: change
   on_failure: always

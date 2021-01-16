@@ -21,6 +21,6 @@
 
 ## 安装
 
-1. `git clone https://github.com/2662419405/vuepress_admin.git`
+1. `git clone https://github.com/git-Where/vuepress_base.git`
 2. `cd vuepress_admin && npm i`
 3. `vuepress dev docs`
